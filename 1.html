@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>navigation bar</title>
+    <style type="text/css">
+        *{
+            text-decoration: none;
+        }
+        .navbar{
+            background: cornflowerblue;font-family: calibri;padding-right: 15x;padding-left: 15px;
+        }
+        .navdiv{
+            display: flex;align-items: center;justify-content: space-between;
+        }
+        .logo a{
+            font-size: 35px;font-weight: 600;color: white;
+        }
+        li{
+            list-style: none;display: inline-block;
+        }
+        li a{
+            color: white;font-size: 18px;font-weight: bold;margin-right: 25px;
+        }
+        button{
+            background-color: black;margin-left: 10px;border-radius: 10px;padding: 10px;width: 130px;
+        }
+        button a{
+            color:white;font-weight: bold;font-size: 15px;
+        }
+        img{
+            width: 800px;
+        }
+        .shua{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+        }
+
+        
+        #slider{
+            overflow: hidden;
+        }
+        #slider figure {
+            position: relative;
+            width: 500%;
+            left: 0;
+            margin: 0;
+            
+           
+          
+            animation: 20s slider infinite;
+        }
+        #slider figure img {
+            float: left;
+            width: 20%;
+        }
+        @keyframes slider{
+            0% {
+                left: 0;
+            }
+            20% {
+                left: 0;
+            }
+            25% {
+             left: -100%;   
+            }
+            45% {
+                left: -100%;
+            }
+            50% {
+                left:-200%;
+            }
+            70%{
+                left:-200%;
+            }
+            75%{
+                left: -300%;
+            }
+            95%{
+                left:-300%;
+            }
+            100%{
+                left: -400%;
+            }
+        }
+        @media  screen and (max-width: 600px) {
+            *{
+            text-decoration: none;
+        }
+        .navbar{
+            background: cornflowerblue;font-family: calibri;padding-right: 3x;padding-left: 3px;
+        }
+        .navdiv{
+            display: flex;align-items: center;justify-content: space-between;
+        }
+        .logo a{
+            font-size: 10px;font-weight: 200;color: white;
+        }
+        li{
+            list-style: none;display: inline-block;
+        }
+        li a{
+            color: white;font-size: 6px;font-weight: bold;margin-right: 7px;
+        }
+        button{
+            background-color: black;margin-left: 3px;border-radius: 3px;padding: 3px;width: 40px;
+        }
+        button a{
+            color:white;font-weight: bold;font-size: 3px;
+        }
+        img{
+            width: 200px;
+        }
+        @media  screen and (max-width: 900px) and (min-width:600px) {
+            *{
+            text-decoration: none;
+        }
+        .navbar{
+            background: cornflowerblue;font-family: calibri;padding-right: 7px;padding-left: 7px;
+        }
+        .navdiv{
+            display: flex;align-items: center;justify-content: space-between;
+        }
+        .logo a{
+            font-size: 17px;font-weight: 400;color: white;
+        }
+        li{
+            list-style: none;display: inline-block;
+        }
+        li a{
+            color: white;font-size: 10px;font-weight: bold;margin-right: 10px;
+        }
+        button{
+            background-color: black;margin-left: 6px;border-radius: 6px;padding: 6px;width: 70px;
+        }
+        button a{
+            color:white;font-weight: bold;font-size: 80px;
+        }
+    }
+
+    </style>
+    </head>
+    <body bgcolor="white">
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo"><a href="file:///C:/Users/ACER/123/1.html">აფხაზეთი</a></div>
+                <li><a href="file:///C:/Users/ACER/123/1.html">მთავარი</a></li>
+                <li><a href="#">ძირითადი</a></li>
+                <li><a href="file:///C:/Users/ACER/123/info.html">ინფორმაცია</a></li>
+                <li><a href="file:///C:/Users/ACER/123/contacti.html">კონტაქტი</a></li>
+                <button><a href="file:///C:/Users/ACER/123/password.html">რეგისტრაცია</a></button>
+                <li><a href="file:///C:/Users/ACER/123/eng.html">translate to english </a></li>
+            </div>
+        </nav>
+        <div id="slider">
+            <figure>
+           <img src="C:\Users\ACER\123\img/poto.jpg" class="shua">
+            <img src="C:\Users\ACER\123\img/p1.jpg"class="shua" >
+            <img src="C:\Users\ACER\123\img/poto.jpg"class="shua" >
+            <img src="C:\Users\ACER\123\img/p1.jpg"class="shua" >
+            <img src="C:\Users\ACER\123\img/poto.jpg"class="shua" >
+            </figure>
+         </div>
+        
+    </body>
+</html>
